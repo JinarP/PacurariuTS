@@ -1,0 +1,69 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    meta(name='viewport' content='width=device-width, initial-scale=1.0')
+    title Servicii de Transporturi
+    style.
+      body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f8f8f8;
+      color: #333;
+      }
+      header {
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+      }
+      .container {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: #fff;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+      h1, h2 {
+      color: #333;
+      }
+      p {
+      line-height: 1.6;
+      }
+      .service {
+      margin-bottom: 20px;
+      padding: 20px;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      }
+      footer {
+      text-align: center;
+      padding: 10px;
+      background-color: #333;
+      color: #fff;
+      }
+  body
+    header(style="background-color:white")
+      include ./navbar
+    h2(style="margin-left:20px; color: #096a91;") Noi putem asigura transportul pentru o gama variate de produse: 
+    .container
+      .service
+        h2(style="color:#096a91;") Marfuri agabaritice
+        p
+          | Specialiști în transporturi, oferim servicii rapide și eficiente pentru transportul de marfuri de mare tonaj. Echipa noastră experimentată și flota moderna care include remorci dotate cu rampe care permit incarcarea/descarcarea de marfuri mobile indiferent de greutate asigură o livrare sigură și la timp, contribuind la succesul fiecărui proiect.
+      .service
+        h2(style="color:#096a91;") Marfa paletizata
+        p
+          | Firma noastră oferă servicii de transport specializate pentru mărfuri paletizate, asigurând o manipulare eficientă și sigură, indiferent de destinație.
+      .service
+        h2(style="color:#096a91;") Cherestea
+        p
+          | Pacurariu Trans Speed, deține autorizație SUMAL și poate sa livrează eficient cherestea, garantând transportul sigur și conform normelor legale.
+      .service
+        h2(style="color:#096a91;") Marfuri generale
+        p
+          | Avand in flota noastra semiremorci mega decopertabile și tavane liftante, suntem specializați si în transportul diversificat al mărfurilor generale și echipamentelor. Asigurăm soluții adaptate pentru fiecare necesitate, garantând eficiență și siguranță pe tot parcursul transportului
+      // Adăugați mai multe servicii după necesități
+    footer
+      | © 2022 Pacurariu Trans Speed. Toate drepturile rezervate.
