@@ -6,22 +6,29 @@ app.use(express.static(__dirname));
 app.set('view engine', 'jade');
 const filePath = path.join(__dirname, 'views')
 
+
 app.get ('/', (req, res) => {
-  const view = path.join(filePath, 'startPage.html')
+  res.render('contact')
+})
+
+app.get('/home', (req, res) => {
+  res.render('home')
+})
+
+app.get('/about', (req, res) => {
+  const view = path.join(filePath, 'about.html')
   res.sendFile(view)
-})
-
-app.get('/trucks', (req, res) => {
-  res.render("auto")
-})
-
-app.get('/meet', (req, res) => {
-  res.render('meet')
 })
 
 app.get('/services', (req, res) => {
   res.render('services')
 })
+
+app.get('/blog' , (req, res) => {
+   res.render('blog')
+})
+
+
 
 const port = 3000;
 app.listen(port, () => {

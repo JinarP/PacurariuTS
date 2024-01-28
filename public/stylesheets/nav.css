@@ -1,0 +1,42 @@
+.header {
+    padding: 5px; 
+    background-color: blue; 
+    height: 50px; 
+    display: flex; 
+    flex-wrap: wrap; 
+    align-items: center; 
+    justify-content: center; 
+    gap: 7px;
+  }
+  
+  .headerIMG {
+    margin-right: 10px; 
+    height: 100%;
+  }
+  
+  .navContainer {
+  
+    height: 5rem;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    margin-left: 0%;
+    margin-right: 0%;
+  }
+  
+  .navIMG {
+    margin-left: 10rem; 
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    max-width: 200px; /* Setează lățimea maximă a imaginii */
+    height: auto; 
+    margin-right: 10px; 
+  }
+  
+  .buttons{
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    margin-left: auto;
+  }

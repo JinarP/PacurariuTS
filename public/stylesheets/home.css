@@ -1,0 +1,187 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 70px;
+}
+
+.card-img {
+  display: inline-block;
+  border: 0;
+  background-color: rgb(249, 251, 251);
+  vertical-align: top;
+  width: 60%;
+  height: 300px;
+  word-wrap: break-word;
+}
+
+.text2 {
+  display: inline-block;
+  background-color: blue;
+  vertical-align: bottom;
+  height: 300px;
+  width: 300px;
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    /* Schimbă direcția de afișare la verticală */
+    align-items: stretch;
+    /* Face ca elementele să aibă lățimea 100% */
+  }
+
+  .card,
+  .text2 {
+    width: 100%;
+    /* Asigură că ambele div-uri ocupă întreaga lățime */
+  }
+}
+
+.slideshow-container {
+  position: relative;
+}
+
+.mySlides {
+
+  max-height: 500px;
+  animation: fade 1.5s ease-in-out;
+}
+
+.mySlides img {
+  width: 100%;
+  height: auto;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.prev,
+.next {
+  position: absolute;
+  top: 50%;
+  color: blue;
+  font-size: 20px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.prev {
+  left: 15px;
+}
+
+.next {
+  right: 15px;
+}
+
+.help-div {
+  display: flex;
+  justify-content: space-around;
+  height: 80px;
+  align-items: center;
+  background-color: blue;
+  margin-top: 70px;
+}
+
+.table {
+  margin-right: 20px;
+  --bs-btn-padding-y: .45rem;
+  --bs-btn-padding-x: .5rem;
+  --bs-btn-font-size: .95rem;
+  background-color: rgb(176, 7, 7);
+  color: white;
+}
+
+.jl-button {
+  margin: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+
+  border-radius: 0;
+  display: inline-block;
+  box-sizing: border-box;
+  padding: 0 30px;
+  vertical-align: middle;
+  font-size: 15px;
+  line-height: 38px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: none;
+  transition: .1s ease-in-out;
+  transition-property: none;
+  border: 1px solid rgba(0, 0, 0, .1);
+  color: #7f7f80;
+  border-color: #7f7f80
+}
+
+.icons {
+  display: flex;
+  flex-direction: column;
+  height: 40px;
+  align-items: center;
+  position: relative;
+  bottom: 30px;
+  color: white;
+}
+
+.jl-button {
+  color: initial;
+  /* Pentru a anula culoarea setată de browser */
+  text-decoration: none;
+}
+
+.jl-button:hover {
+  background-color: blue;
+  color: rgb(249, 249, 250);
+  /* Culoarea pe care o dorești când treci peste buton */
+}
+
+.utility {
+  margin-top: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: space-around;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  /* Permite trecerea la rând nou când spațiul nu este suficient */
+  justify-content: space-around;
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+.card {
+  width: 320px;
+  margin: 10px;
+  /* Adaugă un spațiu între carduri */
+  box-sizing: border-box;
+}
+
+.card h3 {
+  margin: 0;
+}
+
+.down-cards {
+  display: block;
+  width: 170px;
+  color: white;
+}
+
+.down-cards h3 {
+  padding-bottom: 15px;
+}
