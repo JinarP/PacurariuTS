@@ -13,17 +13,56 @@
   background-color: rgb(249, 251, 251);
   vertical-align: top;
   width: 60%;
-  height: 300px;
+  max-height: 300px;
+  height: auto;
   word-wrap: break-word;
 }
 
-.text2 {
-  display: inline-block;
-  background-color: blue;
-  vertical-align: bottom;
-  height: 300px;
-  width: 300px;
+.imagine {
+  max-height: 450px;
+  max-width: 450px;
+  height: auto;
+  width: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  column-gap: 5px;
 }
+
+.imagine img {
+  max-width: 100%;
+  max-height: 100%;
+  min-width: 100px;
+  min-width: 100px;
+  width: auto;
+  height: auto;
+
+}
+
+.button {
+
+  background-color: black;
+  border-radius: 10px;
+
+  padding: 0 30px;
+
+  font-size: 15px;
+  line-height: 38px;
+  border: 1px solid rgba(0, 0, 0, .1);
+  color: #f4f4f8;
+  border-color: #7f7f80;
+  transition: background-color 0.6s ease, color 0.6s ease;
+   
+} 
+.button:hover {
+  
+  background-color: blue;
+  color: rgb(249, 249, 250);
+      /* Culoarea pe care o dorești când treci peste buton */
+}
+
+
 
 @media (max-width: 768px) {
   .container {
@@ -92,6 +131,13 @@
   margin-top: 70px;
 }
 
+
+.elements {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
 .table {
   margin-right: 20px;
   --bs-btn-padding-y: .45rem;
@@ -127,11 +173,11 @@
 .icons {
   display: flex;
   flex-direction: column;
-  height: 40px;
+
   align-items: center;
-  position: relative;
-  bottom: 30px;
+
   color: white;
+
 }
 
 .jl-button {

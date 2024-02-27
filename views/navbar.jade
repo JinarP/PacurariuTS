@@ -3,7 +3,6 @@ html(lang='en')
   head
     meta(charset='UTF-8')
     meta(name='viewport' content='width=device-width, initial-scale=1.0')
-    title Pacurariu
     script(src='/public/javascripts/content.js')
     link(href='/public/stylesheets/nav.css' rel='stylesheet')
   body
@@ -25,40 +24,25 @@ html(lang='en')
               ul.navbar-nav.me-auto.mb-2.mb-md-0
                 li.nav-item
                   a(href='/home')
-                    button.btn.btn-outline-dark(type='button' style='margin-right: 20px;--bs-btn-padding-y: .45rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;') Home
+                    button.btn.btn-outline-dark(type='button' style='margin-right: 20px;--bs-btn-padding-y: .45rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;') Acasa
                 li.nav-item.dropdown
                   .btn-group
                     button.btn.btn-outline-dark.dropdown-toggle(type='button' data-bs-toggle='dropdown' aria-expanded='false' style='margin-right: 20px; --bs-btn-padding-y: .45rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;')
-                      | Company
+                      | Companie
                     ul.dropdown-menu
                       li
-                        a.dropdown-item(href='/about') About us
+                        a.dropdown-item(href='/about') Despre noi
                       li
-                        a.dropdown-item(href='#') Another action
+                        a.dropdown-item(href='/culture') Cultura
                       li
-                        a.dropdown-item(href='#') Something else here
-                      li
-                        hr.dropdown-divider
-                      li
-                        a.dropdown-item(href='#') Separated link
-                li.nav-item.dropdown
-                  .btn-group
-                    button.btn.btn-outline-dark.dropdown-toggle(type='button' data-bs-toggle='dropdown' aria-expanded='false' style='margin-right: 20px; --bs-btn-padding-y: .45rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;')
-                      | Services
-                    ul.dropdown-menu
-                      li
-                        a.dropdown-item(href='#') Action
-                      li
-                        a.dropdown-item(href='#') Another action
-                      li
-                        a.dropdown-item(href='#') Something else here
-                      li
-                        hr.dropdown-divider
-                      li
-                        a.dropdown-item(href='#') Separated link
+                        a.dropdown-item(href='/team') Echipa
+
                 li.nav-item
-                  a(href='/blog')
-                    button.btn.btn-outline-dark(type='button' style='margin-right: 20px;--bs-btn-padding-y: .45rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;') Career
+                  a(aria-current='page' href='/services')
+                    button.btn.btn-outline-dark(type='button' style='margin-right: 20px; --bs-btn-padding-y: .45rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;') Servicii               
+                li.nav-item
+                  a(href='/cariera')
+                    button.btn.btn-outline-dark(type='button' style='margin-right: 20px;--bs-btn-padding-y: .45rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;') Cariera
                 
                 li.nav-item
                   a(aria-current='page' href='/')

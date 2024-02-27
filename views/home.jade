@@ -3,7 +3,7 @@ html(lang='en')
   head
     meta(charset='UTF-8')
     meta(name='viewport' content='width=device-width, initial-scale=1.0')
-    title Document
+    title Pacurariu
     script(src='https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js' integrity='sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL' crossorigin='anonymous')
     link(href='https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css' rel='stylesheet' integrity='sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN' crossorigin='anonymous')
     link(href='/public/stylesheets/home.css' rel='stylesheet')
@@ -15,11 +15,9 @@ html(lang='en')
     include ./navbar
     .slideshow-container
       .mySlides(style='display: flex; height: auto; width: fit-content; max-height: 500px;')
-        img(src='/public/images/startheader-europa-1900x700.jpg')
+        img(src='/public/images/europe.jpg')
       .mySlides(style='display: none;')
         img(src='/public/images/pictures11.jpg')
-      .mySlides(style='display: none;')
-        img(src='/public/images/pictures16.jpg')
       a(onclick='plusSlides(-1)' style='color: blue;' aria-label='Previous slide')
         svg.prev(width='22' height='22' viewBox='0 0 20 20' fill='currentColor' xmlns='http://www.w3.org/2000/svg')
           path(fill-rule='evenodd' clip-rule='evenodd' d='M9.707 16.707a1 1 0 01-1.414 0l-6-6a1 1 0 010-1.414l6-6a1 1 0 011.414 1.414L5.414 9H17a1 1 0 110 2H5.414l4.293 4.293a1 1 0 010 1.414z')
@@ -27,25 +25,31 @@ html(lang='en')
         svg.next(width='22' height='22' viewBox='0 0 20 20' fill='currentColor' xmlns='http://www.w3.org/2000/svg')
           path(fill-rule='evenodd' clip-rule='evenodd' d='M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z')
     
-    .container
-      .card-img
-        .card-body(style='padding-left: 30px;')
-          h1.card-title Card title
-          p.card-text
-            | We want to be tangible - that's why Duvenbeck is a company with a strong corporate culture
-            | based on trust, personality, and teamwork. Our customers and, of course, our employees are at the core of the
-            | company and are actively involved in all decision-making and implementation processes. This creates a sense of
-            | belonging and promotes employee motivation and engagement.
-          a.card-link(href='#')
-            button.btn.btn-outline-primary  Contact
-      img.text2(src='/public/images/descărcare.png')
+    .container.text-center(style='margin-top: 40px;')
+      .row(style='width: 100%; gap: 20px;')
+        .col
+          div
+            h1
+              |                     Despre noi...
+            p(style='text-align: justify;')
+              |„Destinatii unite, livrari eficiente” / „ Conectam inimile, livram lumea” 
+              br
+              |Suntem o companie de transport internațional cu sediul în județul Alba, „inima” tarii, și suntem mândri 
+              |să servim clienții noștri de peste 13 ani. Prin pozitionarea geografica deosebita, suntem bucurosi sa oferim servicii de transport care leaga diferitele locatii si comunitati. Înființată cu scopul de a oferi soluții de transport fiabile și eficiente, ne-am dezvoltat de-a lungul anilor pentru a deveni un partener de încredere pentru companiile din diverse industrii.
+            .tm-button
+              a(style='vertical-align: inherit;' href="/about")
+                button.button Mai multe
+        .col(style='width: 29%;')
+          div(class='imagine')
+            img(src='/public/images/pictures25.jpg' )
     .help-div
-      h1(style='color: white;') How can we help you?
-      button.btn.btn-outline-dark(style='margin-right: 20px;--bs-btn-padding-y: .45rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .95rem; background-color: rgb(176, 7, 7); color: white;')
+      h1(style='color: white;') Cum te putem ajuta?
+      a(href="/")
+       button.btn.btn-outline-dark(style='margin-right: 20px;--bs-btn-padding-y: .45rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .95rem; background-color: rgb(176, 7, 7); color: white;')
         | Contact
         | >
     .services(style='padding-bottom: 60px;')
-      div(style='display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 5px; padding-left: 200px;')
+      div.elements
         #mod-custom303.mod-custom.custom
           p(style='text-align: center;')
             br
@@ -55,21 +59,20 @@ html(lang='en')
             img(src='/public/images/trans.emo.jpg' alt='duvenbeck' width='82' height='82')
             br
             br
-            span(style='font-size: 14pt;') CONCEPT DESIGN
-          table(style=' border: 1px solid black; width: 300px; margin-left: auto; margin-right: auto; ')
+            span(style='font-size: 14pt;') Flota moderna
+          table.table
             tbody
               tr
                 td(style='text-align: center;')
                   strong
-                    | Duvenbeck realizes your 
+                    | Pacurariu Trans Speed 
                     br
-                    | corporate vision as a Lead Logistics
-                    |                   Provider!
+                    | Dispune de o flota de camioane si remorci de ultima generatie
           p(style='text-align: center;')
             img(src='/public/images/table-arrow-2bottom.png' alt='table arrow 2bottom' width='29' height='22' style='margin-top: -5px;')
           p(style='text-align: center;')
-            a.jl-button(href='/en/services/concept-design' target='_self' title='mehr dazu')
-              | more
+            a.jl-button.jl-button-default(href='/about' target='_self' title='mehr dazu')
+              | Mai multe
         #mod-custom303.mod-custom.custom
           p(style='text-align: center;')
             br
@@ -79,21 +82,20 @@ html(lang='en')
             img(src='/public/images/img-ikon-logistik.jpg' alt='duvenbeck' width='82' height='82')
             br
             br
-            span(style='font-size: 14pt;') CONCEPT DESIGN
+            span(style='font-size: 14pt;') Echipa de logistica profesionista
           table.table
             tbody
               tr
                 td(style='text-align: center;')
                   strong
-                    | Duvenbeck realizes your 
+                    | Pacurariu Trans Speed 
                     br
-                    | corporate vision as a Lead Logistics
-                    |                   Provider!
+                    | Se mandreste cu echipa sa de profesionisti desavasiti
           p(style='text-align: center;')
             img(src='/public/images/table-arrow-2bottom.png' alt='table arrow 2bottom' width='29' height='22' style='margin-top: -5px;')
           p(style='text-align: center;')
-            a.jl-button.jl-button-default(href='/en/services/concept-design' target='_self' title='mehr dazu')
-              | more
+            a.jl-button.jl-button-default(href='/team' target='_self' title='mehr dazu')
+              | Mai Multe
         #mod-custom303.mod-custom.custom
           p(style='text-align: center;')
             br
@@ -103,68 +105,65 @@ html(lang='en')
             img(src='/public/images/img-ikon-list.jpg' alt='duvenbeck' width='82' height='82')
             br
             br
-            span(style='font-size: 14pt;') CONCEPT DESIGN
+            span(style='font-size: 14pt;') Puteam transporta orice
           table.table
             tbody
               tr
                 td(style='text-align: center;')
                   strong
-                    | Duvenbeck realizes your 
+                    | Pacurariu Trans Speed 
                     br
-                    | corporate vision as a Lead Logistics
-                    |                   Provider!
+                    | Poate asigura transportul pentru o gama variata de bunuri
           p(style='text-align: center;')
             img(src='/public/images/table-arrow-2bottom.png' alt='table arrow 2bottom' width='29' height='22' style='margin-top: -5px;')
           p(style='text-align: center;')
-            a.jl-button.jl-button-default(href='/en/services/concept-design' target='_self' title='mehr dazu') more
-    div(style='display: flex; justify-content: space-around; align-items: center; margin-bottom: 40px; height: 200px; background-color: blue;')
+            a.jl-button.jl-button-default(href='/services' target='_self' title='mehr dazu')
+             | Mai multe
+    div(style='display: flex; justify-content: space-around; align-items: center; margin-bottom: 40px; height: 200px; background-color: blue; flex-wrap: wrap;')
       .icons
         img(src='/public/images/users-icon.png' style='height: auto; width: 40px;')
-        h2 30 
-        h3 employs
+        h2 23 
+        h3 angajati
       .icons
         img(src='/public/images//location-icon.png' style='height: auto; width: 40px;')
-        h2 30 
-        h3 employs
+        h2 1 
+        h3 sediu
       .icons
         img(src='/public/images//free-truck-icon-1058-thumb.png' style='height: auto; width: 40px;')
-        h2 30 
-        h3 employs
+        h2 17 
+        h3 camioane
       .icons
         img(src='/public/images//earth-icon.png' style='height: auto; width: 40px;')
-        h2 30 
-        h3 employs
+        h2 6 
+        h3 tari
     br
     section.utility
       .card-container
         .card
-          h3 Corporate culture
+          h3 Cultura companiei
           div(style='padding-bottom: 25px;')
-            | We want to be tangible - that's why Duvenbeck is a company with a strong corporate culture based on trust,
-            | personality and teamwork.
+            | Vrem să fim tangibili - de aceea, Pacurariu este o companie cu o cultură corporativă solidă bazată pe încredere, personalitate și colaborare în echipă.
           .card-footer
-            button.btn.btn-outline-primary More about
+            a(href="/culture")
+              button.btn.btn-outline-primary Mai multe
         .card
-          h3 Career
+          h3 Cariera
           div(style='padding-bottom:25px;')
-            | Our culture lives from our employees. From all those who provide their know-how and their contribution to our
-            | company and its development.
+            | Cultura noastră se dezvoltă din contribuția angajaților noștri. De la toți cei care aduc expertiza lor și contribuie la dezvoltarea companiei noastre.
           .card-footer
-            button.btn.btn-outline-primary More about
+            a(href="/cariera")
+              button.btn.btn-outline-primary Mai multe
         .card
-          h3 Requests
+          h3 Contact
           div
-            | We listen to you. Challenge us!
+            | Intrați în contact cu noi. Așteptăm cu nerăbdare să vă auzim.
             br
-            |           › Current load 
             br
-            |           › Transport tender 
             br
-            |           › Contact 
             br
-            |           › Contact person 
-            br
+
+            
           .card-footer
             a(href='/')
-              button.btn.btn-outline-primary More about
+              button.btn.btn-outline-primary Mai multe
     include ./footer

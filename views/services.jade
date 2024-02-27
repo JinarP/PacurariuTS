@@ -3,67 +3,70 @@ html(lang='en')
   head
     meta(charset='UTF-8')
     meta(name='viewport' content='width=device-width, initial-scale=1.0')
-    title Servicii de Transporturi
-    style.
-      body {
-      font-family: 'Arial', sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: #f8f8f8;
-      color: #333;
-      }
-      header {
-      background-color: #333;
-      color: #fff;
-      text-align: center;
-      padding: 20px;
-      }
-      .container {
-      max-width: 800px;
-      margin: 20px auto;
-      padding: 20px;
-      background-color: #fff;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-      }
-      h1, h2 {
-      color: #333;
-      }
-      p {
-      line-height: 1.6;
-      }
-      .service {
-      margin-bottom: 20px;
-      padding: 20px;
-      border: 1px solid #ddd;
-      border-radius: 8px;
-      }
-      footer {
-      text-align: center;
-      padding: 10px;
-      background-color: #333;
-      color: #fff;
-      }
+    title Document
+    link(href='/public/stylesheets/team.css' rel='stylesheet')
+    script(src='https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js' integrity='sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL' crossorigin='anonymous')
+    link(href='https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css' rel='stylesheet' integrity='sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN' crossorigin='anonymous')
+
   body
-    header(style="background-color:white")
-      include ./navbar
-    h2(style="margin-left:20px; color: #096a91;") Noi putem asigura transportul pentru o gama variate de produse: 
+    include ./navbar
+    .start-img
+      img(src='/public/images/truks.jpg')
     .container
-      .service
-        h2(style="color:#096a91;") Marfuri agabaritice
+      .img
+        a(class="imgTitle") Marfuri agabaritice
+        img(src='/public/images/pictures13.jpg')
+      .text
         p
-          | Specialiști în transporturi, oferim servicii rapide și eficiente pentru transportul de marfuri de mare tonaj. Echipa noastră experimentată și flota moderna care include remorci dotate cu rampe care permit incarcarea/descarcarea de marfuri mobile indiferent de greutate asigură o livrare sigură și la timp, contribuind la succesul fiecărui proiect.
-      .service
-        h2(style="color:#096a91;") Marfa paletizata
+        p(class="textTitle")
+          | Soferi profesionisti si flota noastra de ultima generatie ne permit sa transportam marfuri de mare tonaj
+        p(class="description")
+          | Flota moderna include remorci dotate cu rampe care permit incarcarea/descarcarea de marfuri mobile, cu tonaj mare.
+          | Asigurăm astfel o livrare conforma și la timp, contribuind la succesul fiecărui proiect.
         p
-          | Firma noastră oferă servicii de transport specializate pentru mărfuri paletizate, asigurând o manipulare eficientă și sigură, indiferent de destinație.
-      .service
-        h2(style="color:#096a91;") Cherestea
+    .container(style='flex-direction:row-reverse;')
+      .img
+        a(class="imgTitle") Marfa paletizata
+        img(src='/public/images/pictures7.jpg')
+      .text
         p
-          | Pacurariu Trans Speed, deține autorizație SUMAL și poate sa livrează eficient cherestea, garantând transportul sigur și conform normelor legale.
-      .service
-        h2(style="color:#096a91;") Marfuri generale
+        p(class="textTitle")
+          | La Pacurariu Trans Speed, ne specializăm în transportul eficient și sigur al mărfurilor paletizate.
+        p(class="description")
+          |Suntem orientati atat catre transporturile dedicate, cat si pentru grupaje. Acestea din urma permit optimizarea 
+          |rutelor, flexibilitatea in ce priveste cantitatea si frecventa expedierilor si nu in ultimul rand reducerea costurilor.
+          | Indiferent de complexitatea sau dimensiunile articolelor pe care le aveți de transportat, suntem aici pentru a vă oferi 
+          |soluții personalizate și fiabile. Cu vehicule moderne și un personal experimentat, suntem pregătiți să gestionăm cu atenție
+          | și profesionalism transportul mărfurilor dvs. paletizate, aducându-le în siguranță la destinație. 
+
         p
-          | Avand in flota noastra semiremorci mega decopertabile și tavane liftante, suntem specializați si în transportul diversificat al mărfurilor generale și echipamentelor. Asigurăm soluții adaptate pentru fiecare necesitate, garantând eficiență și siguranță pe tot parcursul transportului
-      // Adăugați mai multe servicii după necesități
-    footer
-      | © 2022 Pacurariu Trans Speed. Toate drepturile rezervate.
+    .container
+      .img
+        a(class="imgTitle") Cherestea
+        img(src='/public/images/cherestea.jpeg')
+      .text
+        p
+        p(class="textTitle") 
+          | Suntem mândri să vă oferim servicii specializate de transport pentru 
+        p(class="description") 
+          | Cu o flotă modernă și echipată corespunzător, suntem pregătiți să gestionăm eficient 
+          | transportul cherestelei dumneavoastră, asigurându-ne că fiecare livrare ajunge la destinație 
+          | în condiții optime. Echipa noastră experimentată și dedicată este aici pentru a vă oferi soluții 
+          | de transport personalizate, adaptate cerințelor specifice ale industriei lemnoase.
+        p
+    .container(style='flex-direction:row-reverse;')
+      .img
+        a(class="imgTitle") Marfuri generale
+        img(src='/public/images/pictures15.jpg')
+      .text
+        p
+        p(class="textTitle")
+          | Avand in flota noastra semiremorci mega decopertabile și tavane liftante, suntem specializați si în transportul diversificat al mărfurilor generale
+        p(class="description")
+          |  Echipa noastră dedicată și flota modernă sunt pregătite să gestioneze cu grijă și eficiență transportul mărfurilor generale 
+          | ale companiei dumneavoastră. Avem o hală specializată, echipată pentru stocarea și manevrarea mărfurilor, asigurându-ne că 
+          | acestea sunt întotdeauna în condiții optime. Indiferent de tipul sau cantitatea de mărfuri, Pacurariu Trans Speed vă
+          | oferă soluții de transport flexibile și fiabile, adaptate exact cerințelor dvs. Un partener de încredere în lumea transporturilor!
+        p
+    include ./footer
+

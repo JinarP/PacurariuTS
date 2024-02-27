@@ -1,0 +1,68 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    meta(name='viewport' content='width=device-width, initial-scale=1.0')
+    title Document
+    link(href='/public/stylesheets/team.css' rel='stylesheet')
+    script(src='https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js' integrity='sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL' crossorigin='anonymous')
+    link(href='https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css' rel='stylesheet' integrity='sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN' crossorigin='anonymous')
+
+  body
+    include ./navbar
+    .start-img
+      img(src='/public/images/europe.jpg')
+    .container
+      .img
+        a(class="imgTitle") Un colectiv in miscare 
+        img(src='/public/images/team.2.jpeg')
+      .text
+        p
+        p(class="textTitle")
+          | Împreună, traversăm distanțe și obstacole, construind nu doar drumuri, ci și relații solide.
+        p(class="description")
+          | De-a lungul celor peste 13 ani de activitate si performanta remarcabila, soferii nostri si personalul administrativ asigura succesul operational al companiei noastre. Fiecare șofer este un membru valoros, iar echipa administrativă este sprijinul lui constant.
+        p
+    .container(style='flex-direction:row-reverse;')
+      .img
+        a(class="imgTitle") Cei mai buni soferi din industrie
+        img(src='/public/images/driver.jpeg')
+      .text
+        p
+        p(class="textTitle")
+          | Profesionalism Inegalabil: Șoferii Noștri Sunt Coloana Vertebrală a Performanței noastre
+        p(class="description")
+          | Fiecare drum devine o poveste de succes datorită profesionalismului remarcabil al șoferilor noștri. Cu devotament și abilități deosebite, 
+          |acești specialiști nu sunt doar la volan, 
+          |ci și inima și sufletul fiecărei călătorii. Ei nu fac doar livrări, ci și aduc cu ei importanța vitală a responsabilității și siguranței.
+        p
+    .container
+      .img
+        a(class="imgTitle") De peste 13 ani impreuna
+        img(src='/public/images/pictures23.jpg')
+      .text
+        p
+        p(class="textTitle") O Familie în Mișcare: Peste 13 Ani de Performanță și Dedicare În Transporturi!
+        p(class="description")
+          | De peste 13 ani, șoferii și personalul nostru administrativ lucrează ca o
+          | adevărată familie în lumea transporturilor. Legăturile strânse și încrederea
+          | reciprocă sunt temelia succesului nostru. Fiecare șofer este un membru valoros,
+          | iar echipa administrativă este sprijinul lor constant. Împreună, traversăm
+          | distanțe și obstacole, construind nu doar drumuri, ci și relații solide. Suntem mândri să fim o familie în
+          | mișcare, aducând împreună profesionalismul și pasiunea în fiecare călătorie.
+        p
+    .container(style='flex-direction:row-reverse;')
+      .img
+        a(class="imgTitle") Flota auto
+        img(src='/public/images/pictures24.jpg')
+      .text
+        p
+        p(class="textTitle")
+          | Unitate în Mișcare: Echipa Noastră, o Familie Adevărată în Industria Transporturilor!
+        p(class="description")
+          | Suntem o companie aflata in plina ascensiune, care de-a lungul anilor, prin seriozitate si performanta am strabatut drumurile provocatoare ale industriei transporturilor. Însă, pentru a aduce confort 
+          | și eficiență în fiecare călătorie, investim într-o flotă modernă de excepție. Fiecare camion din flota noastră este o promisiune de tehnologie de vârf, 
+          | siguranță și eficiență. Suntem mândri să fim mai mult decât o companie de transport; suntem o comunitate unită, propulsată spre viitor cu flota noastră modernă.
+        p
+    include ./footer
+

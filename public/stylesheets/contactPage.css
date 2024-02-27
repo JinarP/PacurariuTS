@@ -10,5 +10,12 @@
   }
 
 
+  .card h1 {
+    display: flex;
+    justify-content: center;
+  }
 
+.card-body {
+  margin-left: 3rem;
+}
 

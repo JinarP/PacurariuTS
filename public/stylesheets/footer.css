@@ -1,8 +1,11 @@
 .footer {
     height: 400px;
-    background-color: blue;
+    background-color: #352f67;
     padding-top: 20px;
     display: flex;
     justify-content: space-around;
     align-items: center;
+    color: white;
+    flex-wrap: wrap;
+    margin-top: 30px;
 }

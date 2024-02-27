@@ -1,0 +1,68 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    meta(name='viewport' content='width=device-width, initial-scale=1.0')
+    script(src='https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js' integrity='sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL' crossorigin='anonymous')
+    link(href='https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css' rel='stylesheet' integrity='sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN' crossorigin='anonymous')
+    link(href='/public/stylesheets/aply.css' rel='stylesheet')
+    title Document
+  body
+    include ./navbar
+    a(href="/send") lala
+    .img
+      img(src='/public/images/Jobs.png')
+    .description
+      .description-text
+        h3
+          | Descoperă Oportunități de Dezvoltare Profesională! Aplică Astăzi pentru Poziții Deschise!
+        a
+          | Ești în căutarea unei oportunități de a te dezvolta într-un mediu profesional dinamic? Compania noastră
+          | oferă un cadru propice pentru
+          | creșterea ta profesională. Aplică acum pentru a face parte din echipa noastră diversificată și să
+          | contribui la succesul nostru colectiv.
+          | Alege să evoluezi într-un mediu care încurajează inovația și progresul. Împreună, construim un viitor
+          | plin de realizări!
+    .col-md-6.offset-md-3.mt-5
+      h1  Aplica acum
+      form(action='https://form.taxi/s/pte29h3n' method='POST')
+        .form-group
+          label(for='exampleInputName') Numa complet
+          input#exampleInputName.form-control(type='text' name='fullname' placeholder='Enter your name and surname' required='required')
+        .form-group
+          label
+            | Aplica pentru:
+          br
+          select.form-control(name='Application for')
+            option Sofer
+            option Contabil
+            option Dispecer
+            option Altceva
+        .form-group
+          label(for='exampleInputEmail1' required='required')  Adresa de email 
+          input#exampleInputEmail1.form-control(type='email' name='email' aria-describedby='emailHelp' placeholder='Enter your email address')
+        .form-group
+          label(for='inputAddress') Adresa
+          input#inputAddress.form-control(type='text' name='address' placeholder='1234 Main St')
+        .form-row
+          .form-group.col-md-6
+            label(for='inputCity') Oras
+            input#inputCity.form-control(type='text' name='city' placeholder='Bucuresti')
+        .form-group
+          label.col-2.col-form-label(for='example-tel-input') Telefon
+          .col-10
+            input#example-tel-input.form-control(name='tel' type='tel' placeholder='+4 0722 232 422')
+        .form-group
+          label.col-3.col-form-label(for='example-date-input') Cand puteti incepe
+          .col-10
+            input#example-date-input.form-control(name='starting_date' type='date' placeholder='2020-02-01')
+        .form-group
+          label.col-3.col-form-label(for='example-date-input') Spunetine cateva lucruri despre dumneavoastra
+          .col-10
+            textarea#example-date-input.form-control(name='jobchoose' type='text')                     
+        .form-group.mt-3
+          label.mr-4 Adauga-ti CV-ul:
+          <br>
+          input(type='file' name='file' style="margin-bottom: 20px;")
+        button.btn.btn-primary(type='submit')  Trimite
+    include ./footer 

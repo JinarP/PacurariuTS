@@ -1,6 +1,6 @@
 .header {
     padding: 5px; 
-    background-color: blue; 
+    background-color: #352f67; 
     height: 50px; 
     display: flex; 
     flex-wrap: wrap; 
@@ -16,22 +16,23 @@
   
   .navContainer {
   
-    height: 5rem;
+    height: auto;
+    min-height: 5rem;
     width: 100%;
     background-color: rgb(255, 255, 255);
     margin-left: 0%;
     margin-right: 0%;
   }
   
-  .navIMG {
-    margin-left: 10rem; 
+  .navIMG { 
     height: 100%;
     display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-    max-width: 200px; /* Setează lățimea maximă a imaginii */
-    height: auto; 
+    justify-content: space-around;
+    align-items: center;
+
     margin-right: 10px; 
+    height: 100px;
+    width: 400px;
   }
   
   .buttons{

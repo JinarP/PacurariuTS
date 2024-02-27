@@ -1,0 +1,69 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    meta(name='viewport' content='width=device-width, initial-scale=1.0')
+    title Document
+    link(href='/public/stylesheets/culture.css' rel='stylesheet')
+    script(src='https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js' integrity='sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL' crossorigin='anonymous')
+    link(href='https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css' rel='stylesheet' integrity='sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN' crossorigin='anonymous')
+
+  body
+    include ./navbar
+    .start-img
+      img(src='/public/images/culture.jpg')
+    .container
+      .img
+
+        img(src='/public/images/pictures5.jpg')
+      .text 
+        p
+        h4(style='margin-left: 30px; margin-right: 30px;')
+          | La Pacurariu, specializăm transportul în grupaje auto, oferind soluții eficiente și sigure pentru expedierea mărfurilor dvs.
+        h5(style='margin-left: 30px; margin-right: 30px; line-height: 1.5; color: grey;')
+          | Grupaje auto reprezintă un serviciu eficient și flexibil de transport, care constă în consolidarea mai multor expedieri de mărfuri de la diferiți expeditori într-un singur vehicul, cunoscut și sub denumirea de transport în regim de grupaj. Această metodă permite optimizarea spațiului în vehicul și reducerea costurilor de transport pentru fiecare client.
+
+          |La Pacurariu, suntem specializați în grupaje auto, oferind soluții adaptate nevoilor dumneavoastră. Cu o rețea extinsă de rute și parteneriate solide, asigurăm livrări rapide, eficiente și economice pentru mărfurile dumneavoastră. Avem grijă de siguranța fiecărei expedieri și suntem dedicați să vă oferim o experiență de transport fără probleme.
+
+          |Alegeți Pacurariu Trans Speed pentru servicii de grupaje auto de încredere și eficiente, fie că aveți nevoie de transport local sau internațional. Partenerul dumneavoastră de încredere în fiecare călătorie a mărfurilor!
+    .line
+    .responsibility
+      div
+        h1
+          | Misiunea companiei : 
+        p
+          | Misiunea companiei noastre este furnizarea de solutii eficiente si fiabile de transport rutier de marfuri, contribuind la cresterea si dezvoltarea afacerilor clientilor si colaboratorilor nostri. 
+          | Intr-o industrie competitiva, ne angajam sa oferim servicii de inalta calitate , adaptate nevoilor specifice ale fiecarui client, cu accent pe 
+          | siguranta, punctualitate si profesionalism. Prin parteneriatele noastre strategice cu furnizorii de transport și logistică, ne asigurăm că fiecare transport este gestionat cu cea mai mare atenție.
+        a
+          | În același timp, cerințele ridicate referitoare la propria performanță sunt evidente atat in respectarea sistemului de management cat si in modernizarea continua a flotei de camioane. Aceasta constă din peste 15 de camioane deținute de noi și impresionează prin modernitatea vehiculelor și echipamentul acestora.
+        br
+        br
+        a(style='margin-bottom: 20px;')
+          |La Pacurariu Trans Speed, ne străduim să depășim așteptările clienților noștri , suntem dedicați să construim relații solide și de lungă durată cu partenerii noștri, bazate pe încredere, transparență și colaborare.
+        br
+        br
+        
+    .destination
+      img(src='/public/images/destination.png' style='height: 50px; width: 50px;')
+      a
+        | Doriți mai multe informații sau să primiți certificate? Scrieți-ne la Office@pacurariu.com și vă vom trimite toate informațiile și certificatele de care aveți nevoie.
+    .responsibility
+      div
+        h1(style="margin-top: 30px")
+          | Trasporturi si logistica la cel mai inalt nivel
+        p
+          | În lumea complexă a transporturilor și logisticii, noi la Pacurariu Trans Speed ne angajăm să oferim servicii la cel mai înalt nivel.
+        a
+          | Cu o echipă experimentată și dedicată și o infrastructură modernă și eficientă, suntem pregătiți să gestionăm orice provocare și să depășim orice așteptare.
+          br
+          br
+        a(style='margin-bottom: 20px;')
+          | Fie că este vorba de transport rutier, feroviar, aerian sau maritim, fiecare aspect al operațiunilor noastre este planificat și executat cu precizie și profesionalism.
+        br
+        br
+        a
+          | Suntem determinați să fim lideri în industrie și să stabilim standardele pentru excelență în transport și logistică. 
+          |Cu Pacurariu, clienții noștri pot avea încredere că mărfurile lor vor fi 
+          |livrate la destinație în siguranță, la timp și în condiții optime, indiferent de destinație sau complexitatea solicitării
+    include ./footer
