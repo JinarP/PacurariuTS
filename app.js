@@ -5,6 +5,8 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.static(__dirname));
 app.set('view engine', 'jade');
 const filePath = path.join(__dirname, 'views')
+require("dotenv").config();
+const key =  process.env.KEY
 
 
 app.get('/', (req, res) => {
@@ -25,8 +27,7 @@ app.get('/culture', (req, res) => {
 })
 
 app.get('/team', (req, res) => {
-  // const view = path.join(filePath, 'team.html')
-  // res.sendFile(view)
+
   res.render('team')
 })
 
@@ -39,24 +40,51 @@ app.get('/services', (req, res) => {
 })
 
 var postmark = require("postmark");
-
 // // Example request
-var client = new postmark.ServerClient("4613db02-2ea5-4797-8dda-808e69fd429c");
-const send = () => {
+var client = new postmark.ServerClient(key);
+const message = (subject, name, email, message) => {
 
   client.sendEmail({
     "From": "office@pacurariu.com",
     "To": "office@pacurariu.com",
-    "Subject": "test1",
-    "HtmlBody": "<strong>salut</strong>",
-    "TextBody": "buna seara!",
-    "MessageStream": "outbound"
+    "Subject": subject,
+    "HtmlBody": `<strong>Adresa de email: ${email},  nume: ${name}</strong> <br>`,
+    "TextBody": message 
   });
 }
 
-app.get('/send', (req, res) => {
-  send();
+const send = (date) => {
+  client.sendEmail({
+    "From": "office@pacurariu.com",
+    "To": "office@pacurariu.com",
+    "Subject": `As vrea sa aplic pentru ${date.post}`,
+    "HtmlBody": `
+    <strong> Contact: </strong>
+    <br>
+    <strong> Adresa de email: ${date.email} </strong>
+     <br>
+    <strong> Nume: ${date.fullname} </strong>
+    <br>
+    <strong> Telefon: ${date.tel} </strong>
+    <br>
+    <strong> Adresa: ${date.adress} ${date.city} </strong>
+    <br>
+    <strong> As putea sa incep: ${date.date} </strong>
+    <br>
+    <strong> CV: ${date.cv} </strong>
+    <br>`,
+    "TextBody": `${date.despre} `
+  });
+}
+
+app.post('/send-apply', (req, res) => {
+  send(req.body)
   res.render('cariera')
+})
+
+app.post('/sent-message', (req, res) => {
+  message(req.body.subject, req.body.name, req.body.emailadress, req.body.message)
+  res.render('contact')
 })
 
 const port = 3000;

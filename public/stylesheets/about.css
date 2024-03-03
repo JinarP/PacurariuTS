@@ -10,6 +10,27 @@
   column-gap: 5px;
 }
 
+@media (max-width: 899px) {
+  .img {
+    max-width: 400px;
+    max-height: 400px;
+  }
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+@media (max-width: 899px) {
+  .row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
 .img img {
   max-width: 100%;
   max-height: 100%;
@@ -17,8 +38,10 @@
   min-width: 100px;
   width: auto;
   height: auto;
-
 }
+
+
+
 .intermediar {
     display: flex;
     justify-content: center;

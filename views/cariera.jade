@@ -9,7 +9,6 @@ html(lang='en')
     title Document
   body
     include ./navbar
-    a(href="/send") lala
     .img
       img(src='/public/images/Jobs.png')
     .description
@@ -25,7 +24,7 @@ html(lang='en')
           | plin de realizări!
     .col-md-6.offset-md-3.mt-5
       h1  Aplica acum
-      form(action='https://form.taxi/s/pte29h3n' method='POST')
+      form(action='send-apply' method='POST')
         .form-group
           label(for='exampleInputName') Numa complet
           input#exampleInputName.form-control(type='text' name='fullname' placeholder='Enter your name and surname' required='required')
@@ -33,17 +32,17 @@ html(lang='en')
           label
             | Aplica pentru:
           br
-          select.form-control(name='Application for')
-            option Sofer
-            option Contabil
-            option Dispecer
-            option Altceva
+          select.form-control(name='post')
+            option(value='sofer') Sofer
+            option(value='contabil') Contabil
+            option(value='Dispecer') Dispecer
+            option(value='Altceva') Altceva
         .form-group
           label(for='exampleInputEmail1' required='required')  Adresa de email 
           input#exampleInputEmail1.form-control(type='email' name='email' aria-describedby='emailHelp' placeholder='Enter your email address')
         .form-group
           label(for='inputAddress') Adresa
-          input#inputAddress.form-control(type='text' name='address' placeholder='1234 Main St')
+          input#inputAddress.form-control(type='text' name='adress' placeholder='1234 Main St')
         .form-row
           .form-group.col-md-6
             label(for='inputCity') Oras
@@ -55,14 +54,14 @@ html(lang='en')
         .form-group
           label.col-3.col-form-label(for='example-date-input') Cand puteti incepe
           .col-10
-            input#example-date-input.form-control(name='starting_date' type='date' placeholder='2020-02-01')
+            input#example-date-input.form-control(name='date' type='date' placeholder='2020-02-01')
         .form-group
           label.col-3.col-form-label(for='example-date-input') Spunetine cateva lucruri despre dumneavoastra
           .col-10
-            textarea#example-date-input.form-control(name='jobchoose' type='text')                     
+            textarea#example-date-input.form-control(name='despre' type='text')
         .form-group.mt-3
           label.mr-4 Adauga-ti CV-ul:
           <br>
-          input(type='file' name='file' style="margin-bottom: 20px;")
+          input(type='file' name='cv' style="margin-bottom: 20px;")
         button.btn.btn-primary(type='submit')  Trimite
     include ./footer 

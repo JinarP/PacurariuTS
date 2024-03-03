@@ -33,17 +33,17 @@ html(lang='en')
               .col-md-7.d-flex.align-items-stretch
                 .contact-wrap.w-100.p-md-5.p-4
                   h3.mb-4 Cu ce te putem ajuta?
-                  form#contactForm(action='https://form.taxi/s/j78t5rha' method='POST')
+                  form#contactForm(action='sent-message', method='POST')
                     .row
                       .col-md-6
                         .form-group
-                          input#name.form-control(for='exampleInputName' type='text' name='name' placeholder='Nume')
+                          input#name.form-control(type='text' name='name' placeholder='Nume')
                       .col-md-6
                         .form-group
-                          input#email.form-control(for='emailadress' type='email' name='email' placeholder='Email')
+                          input#email.form-control(name='emailadress' type='email'  placeholder='Email')
                       .col-md-12(style= "margin-top:10px;")
                         .form-group
-                          input#subject.form-control(for='subject' type='text' name='subject' placeholder='Subiect')
+                          input#subject.form-control(name='subject' type='text'  placeholder='Subiect')
                       .col-md-12(style= "margin-top:10px;")
                         .form-group
                           textarea#message.form-control(name='message' cols='30' rows='7' placeholder='Mesage')
