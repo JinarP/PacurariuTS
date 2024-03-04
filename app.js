@@ -87,7 +87,7 @@ app.post('/sent-message', (req, res) => {
   res.render('contact')
 })
 
-const port = 3000;
+const port = 10000;
 app.listen(port, () => {
   console.log(`Serverul rulează la adresa http://localhost:${port}`);
 });
